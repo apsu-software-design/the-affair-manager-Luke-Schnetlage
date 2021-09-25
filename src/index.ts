@@ -1,3 +1,13 @@
+
 import * as UI from './ui'; //import UI
 
-UI.start(); //start up the UI
+
+
+/*
+var a = require('./ui');
+// now as A.js is exporing a function so you can call that function by invoking a() function 
+// as you have inported it into variable name a
+a(); // this will call that
+*/
+
+UI.start(); //start up the UI 
