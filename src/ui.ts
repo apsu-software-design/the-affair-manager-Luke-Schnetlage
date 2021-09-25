@@ -8,9 +8,13 @@ import {AffairManager} from './manager';
 /**
  * Function to run the UI
  */
+
 export function start() {
   showMainMenu(new AffairManager());
 }
+
+
+
 
 /**
  * The main menu. Will show until the user exits
@@ -155,7 +159,7 @@ function _searchListMenu(type:string, results:string[]) : string|undefined {
     
     let choiceIdx = parseInt(readlineSync.question(`Choose a ${type} (1-${results.length}): `)); //will covert to number or NaN
 
-    return results[choiceIdx-1]; //will return undefined if invalid index
+    return results[choiceIdx -1]; //will return undefined if invalid index 
   } else {
     console.log('No results found.')
     return undefined;

@@ -9,7 +9,7 @@
     },
     "include": [
         "src/**/*"
-    ],
+, "build/manager.js"    ],
     "exclude": [
         "node_modules"
     ]
